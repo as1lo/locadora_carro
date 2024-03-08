@@ -161,3 +161,23 @@ create table fornecedor (
     for_numero varchar(50)
 );
 
+
+insert into cliente(cli_nome, cli_contato, cli_cpf, cli_cep, cli_cidade, cli_rua, cli_bairro, cli_numero, cli_cnh)
+values ('Aislan Mota de Oliveira', '75992289795', '09513368513', '44009144', 'Feira de Santana', 'E', 'Calumbi', '10', '7846542');
+
+insert into cliente(cli_nome, cli_contato, cli_cpf, cli_cep, cli_cidade, cli_rua, cli_bairro, cli_numero, cli_cnh)
+values ('Zubeia', '40028922', '98127304', '09170342', 'Feira de Santana', 'C', 'Muchila', '12', '8273920');
+
+update cliente
+set cli_logradouro = 'Cam. B5'
+where cli_id = 2;
+
+insert into marca (mar_nome)
+values ('Fiat');
+
+insert into marca(mar_nome)
+values ('Citroen');
+
+
+insert into fornecedor(for_nome, for_cnpj, for_contato, for_cep, for_pais, for_cidade, for_estado, for_rua, for_bairro, for_numero)
+values ('Radar Veículos Multimarcas', '0938871892', '75992289795', '234234512', 'Brasil', 'Uberaba', 'MG', '45Z', 'Frinho', '23');
